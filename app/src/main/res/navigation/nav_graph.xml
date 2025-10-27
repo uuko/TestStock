@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/stockListFragment">
+
+    <fragment
+        android:id="@+id/stockListFragment"
+        android:name="com.example.teststock.presentation.fragment.StockListFragment"
+        android:label="股票列表" />
+
+    <fragment
+        android:id="@+id/stockDetailFragment"
+        android:name="com.example.teststock.presentation.fragment.StockDetailFragment"
+        android:label="股票詳情">
+        <argument
+            android:name="symbol"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
